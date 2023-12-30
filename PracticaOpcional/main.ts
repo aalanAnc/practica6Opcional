@@ -6,7 +6,6 @@ import mongoose from "npm:mongoose@8.0.0";
 import { Query } from "./resolvers/query.ts";
 import { load } from "https://deno.land/std@0.204.0/dotenv/mod.ts";
 
-// connecto to MongoDB
 const env = await load();
 
 const MONGO_URL = env.MONGO_URL || Deno.env.get("MONGO_URL");
